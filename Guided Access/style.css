@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 :root {
   --line-border-fill: #3498db;
-  --line-border-empty: #e0e0e0;
+  --line-border-empty: #383838;
 }
 
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(198, 188, 188);
+  background-color: #1f1f1f;
   font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
@@ -58,8 +58,8 @@ body {
 }
 
 .circle {
-  background-color: #ffff;
-  color: #999;
+  background-color: #1f1f1f;
+  color: #e2e2e2;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -76,7 +76,7 @@ body {
 
 .btn {
   background-color: var(--line-border-fill);
-  color: #ffff;
+  color: #fff;
   border: 0;
   border-radius: 6px;
   cursor: pointer;
@@ -84,12 +84,14 @@ body {
   padding: 8px 30px;
   margin: 5px;
   font-size: 14px;
-  align-items: center;
-  justify-content: center;
 }
 
 .btn:active {
   transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 .btn:disabled {
