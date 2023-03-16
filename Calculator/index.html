@@ -1,34 +1,44 @@
 <html>
 
 <head>
-    <title>Calculator</title>
+    <title>Calculator</title> <!-- The title of the HTML page is Calculator -->
 </head>
 
 <body>
-
-    <form name="calculator">
-        <table>
+    <form name="calculator"> <!--creates a form named calculator-->
+        <table><!-- the structure will contain a table display for the calculator-->
             <tr>
-                <td colspan="4"><input type="text" id="result" name="result"></td>
+                <td colspan="4">
+                    <input type="text" id="result" name="result">
+                </td>
             </tr>
+            <!--Now, rows are to be added with buttons in the display-->
+
+            <!--First row contains buttons 7,8,9 and add (+) symbol signifying the mathematical operation on either side of the '+' sign.-->
             <tr>
                 <td><input type="button" value="7" onclick="getNumber('7')"></td>
                 <td><input type="button" value="8" onclick="getNumber('8')"></td>
                 <td><input type="button" value="9" onclick="getNumber('9')"></td>
                 <td><input type="button" value="+" onclick="getOperator('+')"></td>
             </tr>
+
+            <!--Second row contains buttons 4,5,6 and subtract (-) sign symbolizing the mathematical operation of the two numbers to its left and right sides.-->
             <tr>
                 <td><input type="button" value="4" onclick="getNumber('4')"></td>
                 <td><input type="button" value="5" onclick="getNumber('5')"></td>
                 <td><input type="button" value="6" onclick="getNumber('6')"></td>
                 <td><input type="button" value="-" onclick="getOperator('-')"></td>
             </tr>
+
+            <!-- Third row contains buttons 1,2,3 and multiplication (*) sign symbolizing relation among the two numbers placed in its left & right space-->
             <tr>
                 <td><input type="button" value="1" onclick="getNumber('1')"></td>
                 <td><input type="button" value="2" onclick="getNumber('2')"></td>
                 <td><input type="button" value="3" onclick="getNumber('3')"></td>
                 <td><input type="button" value="*" onclick="getOperator('*')"></td>
             </tr>
+
+            <!--Fourth row is different from having the clear button (C), number '0' and equal (=) symbolizing operation between two numbers -->
             <tr>
                 <td><input type="button" value="C" onclick="clearScreen()"></td>
                 <td><input type="button" value="0" onclick="getNumber('0')"></td>
@@ -37,7 +47,9 @@
             </tr>
         </table>
     </form>
+
     <script src="script.js"></script>
+    <!--this script will perform all the above given functionality in the calculator with ease-->
 </body>
 
 </html>
